@@ -14,7 +14,7 @@ void sinx_taylor(int num_elements, int terms, double* x, double* result) {
 			value += (double)sign * numer / denom;
 			numer *= x[i]*x[i];
 			denom *= (2.*(double)j+2.)*(2.*(double)j+3.);
-			sign = -1;
+			sign *= -1;
 		}
 		result[i] = value;
 	}
